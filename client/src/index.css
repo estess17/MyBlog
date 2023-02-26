@@ -1,0 +1,41 @@
+/* Source Sans Pro Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+/* bring in normalize.css styles */
+@import-normalize;
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Typography */
+    --family: 'Source Sans Pro', sans-serif;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+body[data-theme='dark'] {
+    --colors-text-main: #eceeef;
+    --colors-text-secondary: #9ba1a7;
+    --colors-bg-main: #161719;
+    --colors-bg-secondary: #181c1d;
+}
+
+body[data-theme='light'] {
+    --colors-text-main: #10181c;
+    --colors-text-secondary: #686f75;
+    --colors-bg-main: #ffffff;
+    --colors-bg-secondary: #f9fafc;
+}
+
+body {
+    margin: 0;
+    font-family: var(--family);
+    font-weight: var(--fw-normal);
+    color: var(--colors-text-main);
+    background-color: var(--colors-bg-main);
+}
